@@ -1,0 +1,39 @@
+.main{
+    background-image: url('bg.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.content h1{
+    font-size: 3rem;
+    color: orange;
+    font-weight: bold;
+
+    text-shadow: 
+    -2px -2px 0 black,  
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1.0rem 2.5rem;
+    background-color: orange;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover{
+    background-color: black;
+    transform: scale(1.05);
+}
