@@ -1,0 +1,39 @@
+/* Hero Section Layout */
+.home-section {
+    display: flex;
+    justify-content: flex-end; /* Push content to right */
+    align-items: center;
+    height: calc(100vh - 170px); /* Full height minus header */
+    padding: 2rem;
+}
+
+/* Content Styling */
+.hero-content {
+    max-width: 500px;
+    background: rgba(0, 0, 0, 0.6); /* Slight dark overlay for readability */
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+}
+
+/* Modern Orange Button */
+.btn-orange {
+    display: inline-block;
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.5rem;
+    background: linear-gradient(45deg, #ff9800, #ffb74d);
+    color: white;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn-orange:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}

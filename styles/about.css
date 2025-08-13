@@ -1,0 +1,42 @@
+.about-section {
+    min-height: calc(100vh - 170px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+/* Glassy transparent background */
+.about-container {
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    padding: 2rem;
+    border-radius: 10px;
+    color: white;
+    text-align: left;
+    backdrop-filter: blur(5px); /* Glass blur effect */
+}
+
+/* Title */
+.about-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    color: #ff9800; /* Orange branding */
+}
+
+/* Paragraphs */
+.about-container p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 700px) {
+    .about-container {
+        padding: 1.5rem;
+    }
+    .about-container h1 {
+        font-size: 2rem;
+    }
+}
