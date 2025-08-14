@@ -51,6 +51,16 @@ body {
     color: #333;
 }
 
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+main, section {
+    flex: 1;
+}
+
 
 .nav-links a {
     color: #fff;

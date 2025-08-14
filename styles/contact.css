@@ -1,30 +1,32 @@
 .contact-section {
-    min-height: calc(100vh - 170px); /* Fills screen minus header/footer */
+    min-height: calc(100vh - 200px); /* Reduced to prevent overlap with nav */
     display: flex;
     align-items: center;
-    justify-content: flex-end; /* Push container to the right */
+    justify-content: flex-end; /* Right side on large screens */
     padding: 2rem;
+    padding-right: 3rem; /* Extra padding on the right */
 }
 
 .contact-container {
-    width: 50%; /* Take up right half */
-    max-width: 700px;
+    width: 45%; /* Take up right portion on large screens */
+    max-width: 500px; /* Reduced max-width for better fit */
     background: rgba(0, 0, 0, 0.6);
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 10px;
     color: white;
     backdrop-filter: blur(5px);
+    margin-right: 1rem; /* Extra margin from the right edge */
 }
 
 .contact-container h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1rem;
     color: #ff9800;
 }
 
 .contact-container p {
-    margin-bottom: 2rem;
-    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -41,10 +43,10 @@
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    padding: 0.8rem;
+    padding: 0.6rem;
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     outline: none;
 }
 
@@ -60,10 +62,10 @@
 
 .btn-orange {
     display: inline-block;
-    padding: 0.8rem 1.5rem;
+    padding: 0.6rem 1.2rem;
     background: linear-gradient(45deg, #ff9800, #ffb74d);
     color: white;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: bold;
     border: none;
     border-radius: 50px;
@@ -79,11 +81,42 @@
 }
 
 /* Responsive adjustments */
-@media (max-width: 700px) {
+@media (max-width: 768px) {
     .contact-section {
-        justify-content: center;
+        justify-content: center; /* Center on medium screens */
+        padding: 0.5rem;
+        min-height: calc(100vh - 180px);
     }
     .contact-container {
-        width: 100%;
+        width: 80%; /* Wider on medium screens */
+        padding: 1rem;
+        margin: 0 0.5rem;
+    }
+    .contact-container h1 {
+        font-size: 1.8rem;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        padding: 0.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact-section {
+        justify-content: center; /* Center on small screens */
+        padding: 0.25rem;
+    }
+    .contact-container {
+        width: 95%; /* Almost full width on small screens */
+        padding: 0.75rem;
+        margin: 0 0.25rem;
+    }
+    .contact-container h1 {
+        font-size: 1.5rem;
+    }
+    .btn-orange {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
     }
 }

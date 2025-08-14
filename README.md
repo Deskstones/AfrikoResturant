@@ -1,6 +1,6 @@
 # Afriko
 
-Afriko is a responsive web application for a fictional food business, ChizzyFoods. This project allows users to browse the menu, learn about the business, contact the team, and place orders online.
+ChizzyKitchens is a responsive web application for a fictional food business, ChizzyFoods. This project allows users to browse the menu, learn about the business, contact the team, and place orders online.
 
 ## Features
 
@@ -22,6 +22,5 @@ Afriko is a responsive web application for a fictional food business, ChizzyFood
 - `images/` — Logo and other images
 
 ## License
-
 
 &copy; 2025 Afriko. All rights
