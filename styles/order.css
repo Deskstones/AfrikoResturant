@@ -1,30 +1,31 @@
 .order-section {
-    min-height: calc(100vh - 170px);
+    min-height: auto; /* Remove fixed height to prevent header/footer overlap */
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    padding: 3rem 2rem; /* More top/bottom padding to separate from header/footer */
+    margin: 2rem 0; /* Add margin to separate from header and footer */
 }
 
 .order-container {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px; /* Reduced max-width for better proportions */
     background: rgba(0, 0, 0, 0.6);
-    padding: 2rem;
+    padding: 1.5rem; /* Reduced padding to make form more compact */
     border-radius: 10px;
     color: white;
     backdrop-filter: blur(5px);
 }
 
 .order-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2rem;
+    font-size: 2rem; /* Reduced font size */
+    margin-bottom: 1.5rem; /* Reduced margin */
     color: #ff9800;
     text-align: center;
 }
 
 .order-form .form-group {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem; /* Reduced margin between form groups */
 }
 
 .order-form label {
@@ -35,10 +36,10 @@
 
 .order-form input {
     width: 100%;
-    padding: 0.8rem;
+    padding: 0.6rem; /* Reduced padding to make inputs more compact */
     border: none;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 0.9rem; /* Slightly smaller font */
     outline: none;
 }
 
@@ -50,10 +51,10 @@
 .btn-orange {
     display: inline-block;
     width: 100%;
-    padding: 0.8rem 1.5rem;
+    padding: 0.6rem 1.2rem; /* Reduced padding */
     background: linear-gradient(45deg, #ff9800, #ffb74d);
     color: white;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Reduced font size */
     font-weight: bold;
     border: none;
     border-radius: 50px;
@@ -69,10 +70,32 @@
 
 /* Responsive adjustments */
 @media (max-width: 700px) {
+    .order-section {
+        padding: 2rem 1rem;
+        margin: 1rem 0;
+    }
     .order-container {
-        padding: 1.5rem;
+        padding: 1rem;
+        max-width: 100%;
     }
     .order-container h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+    .order-form .form-group {
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .order-section {
+        padding: 1rem 0.5rem;
+        margin: 0.5rem 0;
+    }
+    .order-container {
+        padding: 0.75rem;
+    }
+    .order-container h1 {
+        font-size: 1.5rem;
     }
 }
